@@ -1,6 +1,4 @@
 import pandas as pd
-import numpy as np
-import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn import preprocessing
 from sklearn.model_selection import train_test_split
@@ -10,7 +8,7 @@ from keras import regularizers
 from sklearn.metrics import recall_score, f1_score, precision_score, confusion_matrix
 from joblib import dump, load
 # Read the Data from csv file
-data = pd.read_csv('housepricedata.csv')
+data = pd.read_csv('housepricedata.csv') # Reading the data
 X = data.values[:, 0:10]
 Y = data.values[:, 10]
 # Creating Scaler variable named min_max_scaler to change value between 0,1
